@@ -1,0 +1,161 @@
+/*
+    COMP 333: Software Engineering
+    Nina Criswell
+    Homework 1: CSS and html
+    03/03/2021
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*
+    The imported font should be applied to all body text.
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+    All text in paragraphs should be med-light orange
+*/
+p {
+    color: #F27507
+}
+
+div {
+    /*background-color: #f2d6b3;*/
+    font-size: 100%; /* 20px*/
+    color: #D9560B; /* orange */
+}
+
+#little-div {
+  font-size: 75%;
+  color: #8C3718;
+  text-align: right
+}
+
+
+h1 {
+  font-size: 100px;
+  font-weight: 1000;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+    font-size: 300%;
+    font-weight: 1000;
+    color: white;
+    letter-spacing: -1px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #8C3718
+  letter-spacing: -1px;
+}
+
+.background-image-class {
+    background-image: url('images/crowd_orange.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+    color: white;
+}
+.background-image-class-2 {
+    background-image: url('images/nina.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    width:223px;
+    height: 288px;
+    background-size: cover;
+    color: #F27507;
+}
+
+.css-box-model-class {
+    /*
+        Demonstrates the CSS Box Model
+    */
+    width: 30%;
+    border-width: 1px;
+    /*
+        In order to see the border, you will need a border style.
+     */
+    border-style: solid;
+    border-color: #592525;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 0 10px 15px #8C3718;  /* glowing border */
+}
+
+a:hover {
+    color:blue;
+}
+
+/*
+    For your custom navbar, you can specify the unorderd list style.
+*/
+.navbar ul {
+
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #18062C;
+    text-align: center;
+}
+
+/*
+    Style individual list items.
+*/
+.navbar li {
+    width: 20%;
+    background-color: #F27507;
+    /*border: */
+    /*
+        Show the navbar elements next to each other instead of on top of each
+        other.
+    */
+    padding: 0;
+    display: inline-block;
+    line-height: 30px;
+}
+.navbar li:hover {
+  background-color: #8C3718;
+}
+
+/* list for features portion */
+list {
+  list-style: none;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+listi{
+  float: left;
+  width: 300%;
+  background-color: #18062C;
+  padding: 20px;
+  line-height: 30px;
+  display: inline-block;
+
+}
+
+/*
+    Style links in navbar.
+*/
+.navbar a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+input {
+    /*
+        Show different input on top of each other instead of next to each other.
+    */
+    display: block;
+}
